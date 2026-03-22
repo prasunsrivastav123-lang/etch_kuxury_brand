@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 import Layout from "@/components/Layout";
-import heroImg from "@/assets/hero-tray.jpg";
-import editorialImg from "@/assets/editorial-banner.jpg";
+import heroImg from "@/assets/hero-tray.jpeg";
+import editorialImg from "@/assets/editorial-banner.jpeg";
 import productBlackSilver from "@/assets/product-black-silver.jpg";
 import productOceanBlue from "@/assets/product-ocean-blue.jpg";
 import productMonochrome from "@/assets/product-monochrome.jpg";

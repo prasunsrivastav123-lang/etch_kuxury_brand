@@ -89,19 +89,21 @@ export default function Product() {
             {/* Thumbnails */}
             <div className="flex md:flex-col gap-3 overflow-x-auto md:overflow-y-auto no-scrollbar md:w-24 shrink-0">
               {product.images.map((img, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => setSelectedImage(idx)}
-                  className={`relative aspect-square shrink-0 md:w-full overflow-hidden border-2 transition-colors ${
-                    selectedImage === idx ? "border-foreground" : "border-transparent"
-                  }`}
-                >
-                  <img
-                    src={img}
-                    alt={`${product.title} view ${idx + 1}`}
-                    className="w-full h-full object-cover"
-                  />
-                </button>
+               <button
+  key={idx}
+  onClick={() => setSelectedImage(idx)}
+  className={`relative aspect-square shrink-0 md:w-full overflow-hidden border-2 transition-all duration-300 ease-in-out transform ${
+    selectedImage === idx
+      ? "border-foreground scale-105 shadow-lg"
+      : "border-transparent hover:scale-105 hover:shadow-md"
+  }`}
+>
+  <img
+    src={img}
+    alt={`${product.title} view ${idx + 1}`}
+    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+  />
+</button>
               ))}
             </div>
 
